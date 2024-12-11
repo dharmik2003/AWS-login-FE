@@ -53,7 +53,7 @@ const Signup: React.FC = () => {
   
     try {
       // Make the API call
-      const response = await fetch("http://localhost:5001/signup", {
+      const response = await fetch("http:/13.60.168.46:5001/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const Signup: React.FC = () => {
   
         // Update local state
         setUsers([...users, formData]);
-        route.push("/login");
+        route.push("/dashboard");
         // Reset the form
         setFormData({
           firstName: "",
