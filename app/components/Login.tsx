@@ -46,7 +46,7 @@ const Login: React.FC = () => {
 
     try {
       // Make the API call
-      const response = await fetch("http://localhost:5001/login", {
+      const response = await fetch("http://13.60.168.46:5001/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
