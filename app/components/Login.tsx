@@ -46,7 +46,7 @@ const Login: React.FC = () => {
 
     try {
       // Make the API call
-      const response = await fetch("http://13.60.168.46:5001/login", {
+      const response = await fetch("http://13.203.156.30:5001/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const Login: React.FC = () => {
 
         // Update local state
         setUsers([...users, formData]);
-        route.push("/dashboard");
+        route.push("/dashboard.html");
         // Reset the form
         setFormData({
           email: "",
@@ -76,14 +76,15 @@ const Login: React.FC = () => {
   };
 
   if (!isClient) {
-    // Return null or a loading spinner until the client-side JavaScript is ready
     return null;
   }
 
   return (
     <div className="h-full flex justify-center items-center">
       <div className="max-w-[500px] w-full mx-auto p-6 bg-white border border-gray-300 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-center mb-6">Login Form</h2>
+        <h2 className="text-2xl font-semibold text-center text-black mb-6">
+          Login Form
+        </h2>
 
         {/* Form for collecting user input */}
         <form onSubmit={handleSubmit}>

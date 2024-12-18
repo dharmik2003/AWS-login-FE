@@ -1,9 +1,9 @@
-import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen ">
-      <Login />
+    <div className="w-full h-full ">
+      <Signup />
     </div>
   );
 }
