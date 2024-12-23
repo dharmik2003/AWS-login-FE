@@ -63,7 +63,7 @@ const Signup: React.FC = () => {
 
     try {
       // Make the API call
-      const response = await fetch("http://13.203.156.30:5001/signup", {
+      const response = await fetch("https://codedharmik/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -101,7 +101,7 @@ const Signup: React.FC = () => {
   const fetchUserList = async () => {
     try {
       setIsLoader(true);
-      const response = await fetch("http://13.203.156.30:5001/users", {
+      const response = await fetch("http://codedharmik/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
