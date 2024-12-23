@@ -46,7 +46,7 @@ const Login: React.FC = () => {
 
     try {
       // Make the API call
-      const response = await fetch("https://codedharmik/login", {
+      const response = await fetch("https://codedharmik/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
