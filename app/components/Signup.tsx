@@ -101,7 +101,7 @@ const Signup: React.FC = () => {
   const fetchUserList = async () => {
     try {
       setIsLoader(true);
-      const response = await fetch("http://codedharmik/users", {
+      const response = await fetch("https://codedharmik/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
