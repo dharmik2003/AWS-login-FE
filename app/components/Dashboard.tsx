@@ -17,7 +17,7 @@ export default function Dashboard() {
 
   const fetchUserList = async () => {
     try {
-      const response = await fetch("http://13.203.156.30:5001/users", {
+      const response = await fetch("http://codedharmik/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
