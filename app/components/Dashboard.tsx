@@ -17,7 +17,7 @@ export default function Dashboard() {
 
   const fetchUserList = async () => {
     try {
-      const response = await fetch("https://codedharmik/api/users", {
+      const response = await fetch("https://codedharmik.site/api/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
