@@ -46,7 +46,7 @@ const Login: React.FC = () => {
 
     try {
       // Make the API call
-      const response = await fetch("http://13.203.156.30:5001/login", {
+      const response = await fetch("http://codedharmik/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
